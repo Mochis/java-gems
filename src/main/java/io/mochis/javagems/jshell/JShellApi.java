@@ -1,4 +1,4 @@
-package io.mochi.jshell;
+package io.mochis.javagems.jshell;
 
 import jdk.jshell.JShell;
 

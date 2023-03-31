@@ -1,19 +1,26 @@
 plugins {
-    id 'java'
+    id "java-library"
+    id "me.champeau.jmh" version "0.7.0"
 }
 
-group 'io.mochi'
-version '1.0-SNAPSHOT'
-
 wrapper {
-    gradleVersion = '7.5'
+    gradleVersion = '8.0.2'
 }
 
 repositories {
     mavenCentral()
 }
 
+jmh {
+    fork = 1
+    iterations = 3
+    warmupIterations = 2
+}
+
 dependencies {
+    // To fix the error "Unable to find the resource: /META-INF/BenchmarkList"
+    jmhAnnotationProcessor "org.openjdk.jmh:jmh-generator-annprocess:1.36"
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }

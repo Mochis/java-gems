@@ -1,4 +1,4 @@
-package io.mochi.singleton;
+package io.mochis.javagems.singleton;
 
 /**
  * This is an example of lazy thread-safe singleton by using the pattern
