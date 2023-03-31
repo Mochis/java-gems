@@ -1,3 +1,3 @@
 # Java Gems
 
-Java code snipets for testing purposes
+Java code snipets for testing and microbenchmarking purposes.
