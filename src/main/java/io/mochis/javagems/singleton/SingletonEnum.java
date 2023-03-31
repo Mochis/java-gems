@@ -1,4 +1,4 @@
-package io.mochi.singleton;
+package io.mochis.javagems.singleton;
 
 /**
  * We can create singletons with enums because they are syntactic sugar
